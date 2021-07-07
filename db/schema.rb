@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 2021_07_07_205114) do
   end
 
   create_table "subscriptions", force: :cascade do |t|
-    t.string "reader"
-    t.string "magazine"
+    t.string "reader_id"
+    t.string "magazine_id"
     t.integer "price"
   end
 
