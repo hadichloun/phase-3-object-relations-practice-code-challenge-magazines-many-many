@@ -2,7 +2,7 @@ class Subscription < ActiveRecord::Base
   belongs_to :magazine
   belongs_to :reader
 
-  def reader
-    Reader.select { |readers| readers.id == self.reader_id}
+  def print_details
+    puts "#{reader.name} subscribed to #{magazine.title} for $#{subscription.price}"
   end
 end
